@@ -9,7 +9,14 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/awesome-algorand',
 			},
+			editLink: {
+				baseUrl: 'https://github.com/awesome-algorand/awesome-algorand.github.io/edit/main/',
+			},
 			sidebar: [
+				{
+					label: "@algokit/cli",
+					link: process.env.NODE_ENV === 'production' ? "https://awesome-algorand.github.io/npm-algokit-cli/guides/example/" : "http://localhost:4322/npm-algokit-cli/guides/example/",
+				},
 				{
 					label: 'Guides',
 					items: [
